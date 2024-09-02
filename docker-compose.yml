@@ -1,0 +1,7 @@
+services:
+
+  cifrum_cource_ve_ai-service:
+    image: cifrum_cource_ve_ai-service
+    ports:
+      - 8000:8000
+    command: python main.py
