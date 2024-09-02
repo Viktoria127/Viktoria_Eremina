@@ -1,11 +1,12 @@
+import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+import tensorflow as tf
 from tensorflow.keras.layers import Input, Conv1D, Dropout, Conv1DTranspose
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import EarlyStopping, History
 from tensorflow.keras.models import load_model, save_model
 
-import tensorflow as tf
-import os
 import random
 import numpy as np
 

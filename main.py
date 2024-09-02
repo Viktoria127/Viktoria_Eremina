@@ -30,6 +30,7 @@ class Model(BaseModel):
 def read_root():
     return RedirectResponse('./static/index.html')
 
+
 @app.post("/predict")
 def predict_model(model: Model, ucl: float):
     string_data = """datetime;Accelerometer1RMS;Accelerometer2RMS;Current;Pressure;Temperature;Thermocouple;Voltage;Volume Flow RateRMS
